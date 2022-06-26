@@ -25,17 +25,12 @@ export default class Mainpage extends React.Component {
           };
         });
       });
-    /*this.setState((state) => {
-      do {
-        this.init();
-      } while (this.state.account !== 1);
-    });*/
   }
   componentDidMount() {
     this.init();
   }
   render() {
-    if (this.state.home === null) {
+    if (this.state.home === false) {
       return <Loader />;
     }
     return (
