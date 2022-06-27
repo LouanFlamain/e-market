@@ -143,12 +143,9 @@ export default class Header extends React.Component {
           aria-label="main navigation"
         >
           <div className="navbar-brand">
-            <Link className="navbar-item" to="/">
-              <img
-                src="https://bulma.io/images/bulma-logo.png"
-                width="112"
-                height="28"
-              />
+            <Link className="navbar-item image-shadow" to="/">
+              <img src={logo} className="mr-2" />
+              <p>e-market</p>
             </Link>
 
             <a
